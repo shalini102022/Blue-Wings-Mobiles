@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blue Wings-Login</title>
+    
+    <link rel="stylesheet" type="text/css" href="login.css">
+    <script type="text/javascript">
+        
+function validateEmail()
+{
+		var email =  document.getElementById("email").value;
+	    var at = email.indexOf("@");
+	    var dt = email.lastIndexOf(".");
+	    var len= email.length;
+	
+	    if((at<2)||(dt-at<2)||(len-dt<2))
+	     {
+	       alert("Please Enter a valid Email Address");
+	       return false;
+		 }
+	     
+	       return true;
+}
+
+    </script>
+   
+</head>
+
+<body>
+
+ <nav>
+    <ul class="menu">
+        <div class="logo">
+            <img src="logo.jpg" class="img-re">
+        </div>
+        <li><a href="homenew.html">HOME</a></li>
+        <li><a href="products.html">PRODUCTS </a></li>
+        <li><a href="newcontact.html">CONTACT </a></li>
+        <li><a href="login.html">LOGIN<a></li>
+        
+		
+    </ul>
+</nav>
+
+<center>
+    
+        <form>
+        <h2 id="h2">Login Form</h2>
+        <br>
+        <br>
+        <h5 id="h4">
+        <table>
+                <tr>
+                    <td><label ><b>EMAIL:</b></label></td><br><br>
+                   
+                    <td><input type="email" id="email" name="email" placeholder="email"></td>
+                   
+                </tr>
+                
+                
+                <tr>
+                    <td> <label ><b>PASSWORD:</b></label></td>
+                   
+                    <td><input type="password" id="password" name="password" placeholder="password" required></td>
+                   
+                </tr>
+
+                <tr >
+                    <td>
+                        <button type="submit" id="submit" name="submit" >Submit</button>
+                    </td>
+                </tr>
+				
+               <tr>
+                    <td>
+                        <a href="signup.html" id="hi">sign up</a>
+                    </td>
+                </tr>
+                
+            
+        </table>
+		</h5>
+        </form>
+    </div>
+</center>
+
+<script>
+    const loginBtn = document.getElementById('loginBtn');
+    const loginPage = document.getElementById('loginPage');
+
+    
+</script>
+
+
+</body>
+</html>

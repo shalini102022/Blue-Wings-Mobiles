@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blue Wings-contact</title>
+    <link rel="icon" href="images/icon.jpg" type="image/jpg" />
+   <link rel="stylesheet" type="text/css" href="newcontact.css">
+    
+      <style>
+	  *{
+  margin:0px;
+  padding:0px;
+  
+  font-family: cursive;
+}
+        
+		body{
+          
+            background-image:url("back1.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+        }
+        .container {
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+        input, textarea {
+            margin-bottom: 10px;
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        button {
+            padding: 10px;
+            font-size: 16px;
+            color: #fff;
+            background-color: #333;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #555;
+        }
+        .contact-info {
+            margin-top: 20px;
+        }
+        .contact-info p {
+            margin: 5px 0;
+        }
+        .social-media a {
+            margin-right: 10px;
+            text-decoration: none;
+            color: #333;
+        }
+        .map {
+            margin-top: 20px;
+        }
+        iframe {
+            width: 100%;
+            height: 100px;
+            border: 0;
+        }
+		.menu
+{
+  display:flex;
+  
+}
+
+.menu li{
+  display:inline;
+ padding-top:35px; 
+  padding-left: 30%;
+  
+}
+
+.menu li a{
+ 
+  color:white;
+  text-decoration: none;
+  transition: 0.3s ease;
+}
+.menu li a:hover{
+  color:#f7240d;
+}
+nav{
+  background-color:black;
+  color: white;
+  padding: 10px ;
+  display: flex;
+  justify-content: space-between;
+  text-align: right;
+
+}
+   img{
+    width:100px;
+    height: auto;
+	color: transparent;
+  }  </style>
+</head>
+<body>
+  <nav>
+    <ul class="menu">
+        <div class="logo">
+            <img src="logo.jpg" class="img-re">
+        </div>
+        <li><a href="homenew.html">HOME</a></li>
+        <li><a href="products.html">PRODUCTS </a></li>
+        <li><a href="newcontact.html">CONTACT </a></li>
+        <li><a href="login.html">LOGIN</a></li>
+    </ul>
+</nav>
+    
+    <div class="container">
+        <h1>Contact Us</h1>
+        <form>
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+           
+            <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+        <div class="contact-info">
+            <h2>Contact Information</h2>
+            <p>Email: <a href="mailto:bluewings@gmail.com">bluewings@gmail.com</a></p>
+            <p>Phone: 0212232822</p>
+            
+        </div>
+        <div class="social-media">
+            <h3>Follow Us</h3>
+            <a href="https://facebook.com" >Facebook</a>
+            <a href="https://twitter.com" >Twitter</a>
+            <a href="https://instagram.com">Instagram</a>
+        </div>
+       
+    </div>
+</body>
+</html>

@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BLUE WINGS MOBILES</title>
+    <link rel="icon" href="images/icon.jpg" type="image/jpg" />
+   <style>
+     * {
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+        font-family: cursive;
+    }
+    nav {
+        background-color: black;
+        padding: 10px;
+        display: flex;
+        justify-content: space-between;
+        text-align: center;
+    }
+    body {
+        background-image: url('back5.jpg');
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+    }
+    .img-re {
+        height: 100px;
+        width: 100px;
+    }
+    .menu {
+        display: flex;
+    }
+    .menu li {
+        display: inline;
+        padding-top: 35px;
+        padding-left: 30%;
+    }
+    .menu li a {
+        color: white;
+        text-decoration: none;
+        transition: 0.3s ease;
+    }
+    .menu li a:hover {
+        color: #f7240d;
+    }
+    #sgnup {
+        position: absolute;
+        top: 70%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        border: white;
+        width: 550px;
+        color: white;
+        border-radius: 20px;
+        box-shadow: 0px 0px 20px rgb(23, 24, 24);
+        background-size: cover;
+        background-position: center;
+        overflow: hidden;
+        align-items: center;
+        height: 450px;
+    }
+    h1 {
+        text-align: center;
+    }
+    h2 {
+        color: black;
+        font-size: 40px;
+        text-shadow: 0px 0px 2px rgb(18, 18, 18);
+        margin-bottom: 20px;
+        text-align: center;
+    }
+    label {
+        color: rgba(255, 255, 255, 0.8);
+        text-transform: uppercase;
+        font-size: 15px;
+        letter-spacing: 2px;
+        padding-left: 10px;
+        font-family: Brush Script;
+        color: black;
+    }
+    input {
+        background: rgba(255, 255, 255, 0.705);
+        height: 20px;
+        line-height: 20px;
+        border-radius: 20px;
+        padding: 0px 20px;
+        margin-bottom: 20px;
+        color: rgb(24, 24, 24);
+        font-weight: bold;
+        font-family: cursive;
+    }
+    input:focus {
+        outline: none;
+        box-shadow: 0px 0px 20px rgb(6, 241, 241);
+    }
+    button {
+        background: blue;
+        height: 40px;
+        line-height: 40px;
+        border-radius: 40px;
+        border: none;
+        margin: 10px 0px;
+        box-shadow: 0px 0px 5px green;
+        color: bisque;
+        font-size: 25px;
+        width: 150px;
+        font-family: cursive;
+        font-weight: bold;
+    }
+    button:hover {
+        box-shadow: 0px 0px 50px rgb(242, 10, 199);
+    }
+    select:focus {
+        outline: none;
+        box-shadow: 0px 0px 20px rgb(6, 241, 241);
+    }
+    #Country {
+        border-radius: 20px;
+        background: rgba(255, 255, 255, 0.705);
+        height: 20px;
+        line-height: 20px;
+        font-weight: bold;
+        font-family: cursive;
+        padding: 0px 20px;
+    }
+    table td {
+        color: white;
+    }
+   </style>
+
+
+   <script  type="text/javascript">
+    function validateEmail()
+{
+		var email =  document.getElementById("email").value;
+	    var at = email.indexOf("@");
+	    var dt = email.lastIndexOf(".");
+	    var len= email.length;
+	
+	    if((at<2)||(dt-at<2)||(len-dt<2))
+	     {
+	       alert("Please Enter a valid Email Address");
+	       return false;
+		 }
+	     
+	       return true;
+}
+
+function validateName()
+{
+	var fname = document.getElementById("text").value ; 
+	
+	if((fname == "") || (fname == null))
+		{
+			alert("Please enter firstname name");
+			return false;
+		}
+	return true;
+}
+
+function validateName2()
+{
+	var fname2 = document.getElementById("text1").value ; 	
+	
+	if((fname2 == "") || (fname2 == null))
+		{
+			alert("Please enter lastname name");
+			return false;
+		}
+	return true;
+}
+	
+
+
+	
+function validatePassword()
+	{
+		var password =  document.getElementById("password").value;
+		var Cpassword =  document.getElementById("password1").value;
+		
+		if((password.length < 5) || (password != Cpassword))
+			{
+        alert("Password must contain 5 character!!Please enter the correct password");
+				
+	            return false;
+			}S
+		        return true;
+	}
+    function validateAll()
+  {
+	if(validateEmail() && validateName() && validateName2() && validatePassword() )
+        {
+
+			alert("Sign up sucessfully completed !!!!!  welcome our blue wings mobiles web site");
+		    
+		}
+	else
+		{
+			event.preventDefault();
+		}
+}
+	
+   </script>
+      
+</head>
+<body>
+  <nav>
+    <ul class="menu">
+        <div class="logo">
+            <img src="logo.jpg" class="img-re">
+        </div>
+        <li><a href="homenew.html">HOME</a></li>
+        <li><a href="products.html">PRODUCTS </a></li>
+        <li><a href="newcontact.html">CONTACT </a></li>
+        <li><a href="login.html">LOGIN</a></li>
+    </ul>
+</nav>
+
+
+    <h1>BLUE WINGS MOBILES</h1>
+    <br>
+    <br>
+    
+    <div  id="sgnup">
+
+        <form>
+            <h2 >Signup Form</h2>
+            <br>
+            <table>
+          
+      <tr>
+          <td><label for="email" class="l1">email:</label></td>
+          <td><input type="email" id="email" name="email" placeholder="email" ></td>
+          </tr>
+          
+          <tr>
+          
+          <td> <label for="text" class="l2">First Name:</label></td>
+         <td><input type="text" id="text" name="text" placeholder="First Name" ></td>
+          
+          </tr>
+          <tr>
+          
+            <td> <label for="text1" class="l3">Last Name:</label></td>
+           <td><input type="text" id="text1" name="text1" placeholder="Last Name" required></td>
+            
+            </tr>
+            <tr>
+          
+                <td> <label for="password" class="l4">password:</label></td>
+               <td><input type="password" id="password" name="password" placeholder="password" required></td>
+                
+                </tr>
+                <tr>
+                <td> <label for="password1" class="l5">Conform password:</label></td>
+               <td><input type="password" id="password1" name="password1" placeholder="conform password" required></td>
+                
+                </tr>
+                <tr>
+                  <td> <label for="select">Country:</label></td></td>
+                 <td><select name="Country" id="Country">
+                  <option value="Sri Lanka">Sri Lanka</option>
+                  <option value="India">India</option>
+                  <option value="England">England</option>
+                  <option value="Pakistan">Pakistan</option>
+                  <option value="Vietnam">Vietnam</option>
+                  <option value="Thailand">Thailand</option>
+                  <option value="Japan">Japan</option>
+                  <option value="USA">USA</option>
+                  <option value="Germany">Germany</option>
+                  <option value="SUdan">Sudan</option>
+                  <option value="Dubai">Dubai</option>
+                  <option value="Thai Land">Thai Land</option>
+                  </select></td>
+                  
+                  </tr>
+                  <tr></tr>
+                  <tr></tr>
+                  <tr></tr>
+                  <tr></tr>
+                  <tr></tr>
+          <tr>
+            <td>
+              
+             <button type="submit" id="submit" name="submit" value="submit" onclick="validateAll()">submit</button></td>
+                  <td>
+                  <button type="reset" id="reset" name="reset" value="reset">reset</button>
+              </td>
+          </tr>
+
+        </table>
+        </form>
+
+      
+      </div>
+
+      
+       
+</body>
+</html>

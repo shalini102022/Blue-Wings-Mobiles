@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BLUE WINGE MOBILES -product</title>
+    <link rel="stylesheet" type="text/css" href="Product.css">
+	<script>
+      document.addEventListener('DOMContentLoaded', () => {
+          // Get the cart count 
+          const cartCountElement = document.getElementById('cart-count');
+          
+          // Initialize cart count
+          let cartCount = parseInt(cartCountElement.textContent, 10) || 0;
+
+          // Get all "Add to Cart" buttons
+          const addToCartButtons = document.querySelectorAll('.button');
+
+          // Add click event listeners to each "Add to Cart" button
+          addToCartButtons.forEach(button => {
+              button.addEventListener('click', (event) => {
+                  event.preventDefault(); // Prevent default link behavior
+                  
+                  // Increment cart count and update the span text
+                  cartCount++;
+                  cartCountElement.textContent = cartCount;
+              });
+          });
+      });
+  </script>
+   
+
+</head>
+
+
+	
+<body>
+ 
+    <nav>
+        <ul class="menu">
+            <div class="logo">
+                <img src="logo.jpg" class="img-re">
+				
+            </div>
+			
+
+            
+			<ul class="menu">
+        <li><a href="homenew.html">BACK</a></li>
+        
+        
+        <li>
+          <div class="icon-cart">
+              <svg   aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 4h1.5L9 16m0 0h8m-8 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm8 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm-8.5-3h9.25L19 7H7.312"/>
+                </svg>
+                <span id="cart-count">0</span>
+                
+  
+          </div></li>
+       
+  
+  
+  </ul>    
+        </ul>
+    </nav>
+   
+  
+   
+
+</head>
+
+<body>
+
+  
+  
+  <div class="search">
+    <form>
+      <input type="text" placeholder="search">
+      <button type="submit">GO</button>
+    </form>
+  </div>
+  </nav>
+<h1 id="h1">Blue Wings Mobiles</h1>
+<br>
+<br>
+<div class="grid">
+    
+    
+    <div class="item" >
+      <img class="image" src="1.jpg">
+	  <h3 class="title">  Samsung Galaxy S24</h3>
+	  <p class="description"> 8 Gen 3 chipset, 4000 mAh battery, 512 GB storage, 12 GB RAM</p>
+        <p class="price">$1199.99</p>
+      <div class="details">
+        
+        <a href="#" class="button">Add to Cart</a>
+      </div>
+    </div>
+	
+
+    <div class="item" >
+      <img class="image" src="2.jpg">
+	  <h3 class="title">Apple iPhone 15 Pro Max</h3>
+        <p class="description">256GB, Blue Titanium,phone has 2796x1290 Resolution</p>
+        <p class="price">$1199.99</p>
+      <div class="details">
+        
+        <a href="#" class="button">Add to Cart</a>
+      </div>
+    </div>
+
+    <div class="item" >
+      <img class="image" src="3.jpg">
+	   <h3 class="title">Xiaomi 14 Ultra</h3>
+        <p class="description">RAM 16GB.
+                            Storage 512GB.
+                    Battery Capacity 5300mAh.
+                  OS Android 14.</p>
+        <p class="price">$1140.00</p>
+      <div class="details">
+        
+        <a href="#" class="button">Add to Cart</a>
+      </div>
+    </div>
+
+    <div class="item" >
+      <img class="image" src="4.jpg" >
+	  <h3 class="title">4.OnePlus 12</h3>
+        <p class="description">12GB RAM 256GB, 
+		 Smoothness on Full Display. </p>
+        <p class="price">$1150.00</p>
+		<div class="details">
+        <a href="#" class="button">Add to Cart</a>
+      </div>
+    </div>
+
+    <div class="item" >
+      <img class="image" src="5z.jpg" >
+    
+        <h3 class="title">Samsung Galaxy Z Fold 5</h3>
+        <p class="description">12GB RAM 256GB,
+		Take the big screen with you. Unfold a stunning, ...</p>
+        <p class="price">$1360.00</p>
+		 <div class="details">
+        <a href="#" class="button">Add to Cart</a>
+      </div>
+    </div>
+
+    <div class="item" >
+      <img class="image" src="6o.jpg">
+     
+        <h3 class="title">OPPO Find N3 Flip</h3>
+        <p class="description">12GB + 256GB · Display. Size. Main screen: 6.8 inches (diagonal) · Camera. Rear.</p>
+        <p class="price">$1240.00</p>
+		 <div class="details">
+        <a href="#" class="button">Add to Cart</a>
+      </div>
+    </div>
+
+    <div class="item" >
+      <img class="image" src="7.jpg">
+     
+        <h3 class="title">Google Pixel 8 Pro</h3>
+        <p class="description">create memories with the best Pixel Camera yet.12GB RAM +256GB</p>
+        <p class="price">$1059.00</p>
+		 <div class="details">
+        <a href="#" class="button">Add to Cart</a>
+      </div>
+    </div>
+
+    <div class="item" >
+      <img class="image" src="8.jpg">
+    
+        <h3 class="title">Huawei P9</h3>
+        <p class="description"> Features 5.2″  
+		Dual: 12 MP primary camera, 8 MP front camera, 3000 mAh battery, ...</p>
+        <p class="price">$500.80</p>
+		 <div class="details">
+        <a href="#" class="button">Add to Cart</a>
+      </div>
+    </div>
+
+    <div class="item" >
+      <img class="image" src="9.jpg">
+    
+        <h3 class="title">Huawei P8lite</h3>
+        <p class="description"> Features 5.0″ display, Kirin 620 chipset, 13 MP primary camera, 5 MP front camera, 2200 mAh battery, ...</p>
+        <p class="price">$522.77</p>
+		 <div class="details">
+        <a href="#" class="button">Add to Cart</a>
+      </div>
+    </div>
+
+    <div class="item" >
+      <img class="image" src="10.jpg">
+     
+        <h3 class="title">Lenovo</h3>
+        <p class="description"> 8GB RAM 256GB,Tempered Glass Screen Protector</p>
+        <p class="price">$922.69</p>
+		 <div class="details">
+        <a href="#" class="button">Add to Cart</a>
+      </div>
+    </div>
+
+    <div class="item" >
+      <img class="image" src="11.jpg">
+     
+        <h3 class="title">LG</h3>
+        <p class="description">Features 6.53″ display, MT6765 Helio P35 chipset, 4000 mAh battery, 64 GB storage, 4 GB RAM,</p>
+        <p class="price">$800.32</p>
+		 <div class="details">
+        <a href="#" class="button">Add to Cart</a>
+      </div>
+    </div>
+
+    <div class="item" >
+      <img class="image" src="12.jpg">
+      <div class="details">
+        <h3 class="title">Samsung Galaxy Note3</h3>
+        <p class="description"> 64GB 3GB RAM.include support for USB 3.0,
+		 faster data transfers and charging .</p>
+        <p class="price">$922.24</p>
+        <a href="#" class="button">Add to Cart</a>
+      </div>
+    </div>
+
+    <div class="item" >
+      <img class="image" src="13.jpg">
+     
+        <h3 class="title">Oppo F1 Plus</h3>
+        <p class="description">5.5" 1080x1920 pixels; 13MP 1080p; 4GB RAM Helio P10; 2850mAh 20W.</p>
+        <p class="price">$700.65</p>
+		 <div class="details">
+        <a href="#" class="button">Add to Cart</a>
+      </div>
+    </div>
+
+    <div class="item" >
+      <img class="image" src="14.jpg">
+ 
+        <h3 class="title">Xiaomi Redmi2</h3>
+        <p class="description"> Body, Dimensions, 164.9 x 76.8 x 9.1 mm (6.49 x 3.02 x 0.36 in) ; Display ...32GB RAM</p>
+        <p class="price">$844.00</p>
+		 <div class="details">
+        <a href="#" class="button">Add to Cart</a>
+      </div>
+    </div>
+
+    <div class="item" >
+      <img class="image" src="15.1.jpg">
+ 
+        <h3 class="title">VivoX65 Plus</h3>
+        <p class="description"> Features 5.5″ display, 
+	 13 MP primary camera, 5 MP front camera, 3000 mAh battery, ...</p>
+        <p class="price">$822.00</p>
+		 <div class="details">
+        <a href="#" class="button">Add to Cart</a>
+      </div>
+    </div>
+
+    
+
+    <div class="item" >
+      <img class="image" src="16.jpg">
+   
+        <h3 class="title">ZTE Zmax2</h3>
+        <p class="description">5.5" 720x1280 pixels; 8MP 1080p; 2GB RAM Snapdragon 410; 3000mAh.56GB</p>
+        <p class="price">$700.00</p>
+		 <div class="details">
+        <a href="#" class="button">Add to Cart</a>
+      </div>
+    </div>
+
+    
+
+    <div class="item" >
+      <img class="image" src="17.jpg">
+      
+        <h3 class="title">iPhone 15 Pro</h3>
+        <p class="description">48-megapixel primary camera;
+		a 12-megapixel camera, and a 12-megapixel (f/1.78) camera.
+		8GB+256GB</p>
+        <p class="price">$1500.00</p>
+		 <div class="details">
+        <a href="#" class="button">Add to Cart</a>
+      </div>
+    </div>
+
+    
+    <div class="item" >
+      <img class="image" src="18.jpg">
+    
+        <h3 class="title">iPhone 14 Pro</h3>
+        <p class="description">PICTURES. 6.1" 1179x2556 pixels; 
+		48MP 2160p; 6GB RAM Apple A16 Bionic; 6GB+128GB</p>
+        <p class="price">$1300.99</p>
+		 <div class="details">
+        <a href="#" class="button">Add to Cart</a>
+      </div>
+    </div>
+
+    <div class="item" >
+      <img class="image" src="19.jpg">
+   
+        <h3 class="title">iphone 12</h3>
+        <p class="description">Internal Memory : 64GB 4GB RAM,
+           The internal storage capacity is also better on the iPhone Pro.		</p>
+        <p class="price">$1266.00</p>
+		 <div class="details">
+        <a href="#" class="button">Add to Cart</a>
+      </div>
+    </div>
+
+
+
+    <div class="item" >
+      <img class="image" src="20.jpg">
+  
+        <h3 class="title">iphone 14</h3>
+        <p class="description">phone has 2796x1290 Resolution and the screen type is Super Retina XDR.
+		6GB RAM+256GB</p>
+        <p class="price">$1366.66</p>
+		 <div class="details">
+        <a href="#" class="button">Add to Cart</a>
+      </div>
+    </div>
+
+
+    <div class="item" >
+      <img class="image" src="21.jpg">
+
+        <h3 class="title">iphone 13</h3>
+        <p class="description">Super Retina XDR display · 
+		6.1‑inch (diagonal) all‑screen OLED display· HDR display.
+		6GB+256GB</p>
+        <p class="price">$1255.00</p>
+		 <div class="details">
+        <a href="#" class="button">Add to Cart</a>
+      </div>
+    </div>
+
+    <div class="item" >
+      <img class="image" src="22.1.jpg">
+      
+        <h3 class="title">iphone 13 pro max</h3>
+        <p class="description"> 240g, 7.7mm thickness · iOS 15, up to iOS 17.5.1 ·
+		128GB/256GB/1TB storage, no card slot.</p>
+        <p class="price">$1322.00</p>
+		 <div class="details">
+        <a href="#" class="button">Add to Cart</a>
+      </div>
+    </div>
+
+  
+
+    
+
+    <div class="item" >
+      <img class="image" src="23.jpg">
+     
+        <h3 class="title">MOTOROLA</h3>
+        <p class="description">Features 6.5″ display, Unisoc Tiger T616 chipset, 5000 mAh battery, 256 GB storage, 8 GB RAM, ....</p>
+        <p class="price">$600.99</p>
+		 <div class="details">
+        <a href="#" class="button">Add to Cart</a>
+      </div>
+    </div>
+
+    
+
+    <div class="item" >
+      <img class="image" src="24.jpg">
+  
+        <h3 class="title">ReaLme</h3>
+        <p class="description">Features 6.4″ display, MT6785V chipset, 5000 mAh battery, 128 GB storage, 8 GB RAM.</p>
+        <p class="price">$544.99</p>
+		 <div class="details">
+        <a href="#" class="button">Add to Cart</a>
+      </div>
+    </div>
+
+   <div class="item" >
+      <img class="image" src="25.jpg">
+   
+        <h3 class="title">Samsung Galaxy A32 5G</h3>
+        <p class="description">The device has big screen 6.5 inch
+		 good Camera Long Lasting Battery </p>
+        <p class="price">$1334.99</p>
+		 <div class="details">
+        <a href="#" class="button">Add to Cart</a>
+      </div>
+    </div>
+
+  
+</div>
+
+        
+</body>
+</html>
+
+         
